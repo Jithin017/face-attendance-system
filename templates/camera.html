@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Live Face Recognition</title>
+</head>
+<body>
+    <h2>Live Camera Feed with Face Recognition</h2>
+    <img id="video" src="{{ url_for('video_feed') }}" width="720" height="540">
+    <br><br>
+    <button onclick="captureSnapshot()">📸 Capture Snapshot</button>
+    <br><br>
+    <a href="/dashboard">Back to Dashboard</a>
+
+    <script>
+        function captureSnapshot() {
+            fetch('/capture_snapshot')
+            .then(res => res.text())
+            .then(alert)
+            .catch(() => alert('Failed to capture snapshot'));
+        }
+    </script>
+</body>
+</html>
+

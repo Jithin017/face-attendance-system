@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Attendance Records</title>
+</head>
+<body>
+    <h2>Attendance Logs</h2>
+    <table border="1">
+        <tr><th>Name</th><th>Timestamp</th></tr>
+        {% for name, timestamp in records %}
+        <tr><td>{{ name }}</td><td>{{ timestamp }}</td></tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/dashboard">Back to Dashboard</a>
+</body>
+</html>
+

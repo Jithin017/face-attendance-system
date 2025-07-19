@@ -1,0 +1,10 @@
+Flask==2.3.3
+opencv-python
+numpy
+tensorflow
+Pillow
+SQLAlchemy
+gunicorn
+openpyxl
+scikit-learn
+bing-image-downloader

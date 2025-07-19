@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Registered Users</h2>
+    <ul>
+        {% for user in users %}
+        <li>{{ user[2] }} ({{ user[1] }})</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <a href="/camera">Live Face Camera</a><br>
+    <a href="/attendance">View Attendance</a><br>
+    <a href="/export_attendance">Download Attendance (Excel)</a><br>
+    <a href="/logout">Logout</a>
+</body>
+</html>
+
