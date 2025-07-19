@@ -1,10 +1,19 @@
-# Ignore Python venv and cache files
+# Ignore virtual environment
 venv/
+
+# Byte-compiled / cache
 __pycache__/
-*.pyc
-*.pyo
-*.pyd
-*.sqlite3
-*.h5
+*.py[cod]
+
+# Logs
+*.log
+
+# Mac/Linux system files
 .DS_Store
-.env
+
+# Model files (optional)
+*.h5
+
+# VS Code settings (optional)
+.vscode/
+
