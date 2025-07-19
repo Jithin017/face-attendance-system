@@ -1,0 +1,10 @@
+# Ignore Python venv and cache files
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.h5
+.DS_Store
+.env
